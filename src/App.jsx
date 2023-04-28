@@ -16,9 +16,7 @@ function App() {
   return (
     <div className="container">
       <div className="background-element"></div>
-      <div className="highlight-window">
-        <div className='highlight-overlay'></div>
-      </div>
+      <img className="image" src="https://images.finncdn.no/dynamic/1280w/2020/1/vertical-0/12/4/167/519/934_1912271204.jpg" alt="Пальто" />
       <div className="window">
         <ShopItemFunc item={item} />
       </div>
@@ -31,7 +29,7 @@ function ShopItemFunc({item}) {
   return (
     <div className="main-content">
       <h2>{item.brand}</h2>
-      <h1>{item.title}</h1>
+      <h1 className='title'>{item.title}</h1>
       <h3>{item.description}</h3>
       <div className="description">
         {item.descriptionFull}
@@ -44,7 +42,7 @@ function ShopItemFunc({item}) {
         <div className="price">
           {item.currency}{item.price.toFixed(2)}
         </div>
-        <button>Добавить в корзину</button>
+        <button className='button'>Добавить в корзину</button>
       </div>
     </div>
   );
