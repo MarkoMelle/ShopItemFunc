@@ -1,4 +1,4 @@
-name: chaos-chat
+name: ShopItemFunc
 
 on:
   push:
